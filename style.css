@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(255, 255, 0, 0.645);
+    
+}
+.tittle{
+    text-align: center;
+    line-height: 50px;
+    font-size: 50px;
+}
+.contanier{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 20px 0 100px 0;
+}
+.Row1{
+    background-color: #0684ebe6;
+    width: 150px;
+    height: 150px;
+    animation: row1 2s ease  infinite alternate;
+}
+
+
+@keyframes row1 {
+    from{
+        transform: skew(30deg);
+
+    }
+    to{
+        transform: skew(-30deg);
+
+    }
+}
+
+/* Second Row Style  */
+
+.Row2{
+    background-color: rgba(5, 164, 164, 0.788);
+    width: 150px;
+    height: 150px;
+    animation: row2 2s ease  infinite alternate;
+}
+
+@keyframes row2 {
+    from{
+        transform: skewY(30deg);
+
+    }
+    to{
+        transform: skewY(-30deg);
+
+    }
+}
+
+/* Third Row Style  */
+.Row3{
+    background-color: rgba(5, 74, 171, 0.788);
+    width: 150px;
+    height: 150px;
+    animation: row3 2.5s ease-in infinite ;
+}
+@keyframes row3 {
+    0%{
+       transform: rotate(0deg); 
+    }
+    100%{ 
+        transform: rotate(360deg) ;
+
+    }
+    
+}
+
+/* Fourth row Style  */
+
+.col{
+    width: 150px;
+    height: 150px;
+}
+
+.col1{
+    background-color: #0684ebe6;
+    animation: col1 2.5s ease infinite alternate-reverse;
+    border: 3px solid blue;
+}
+.col2{
+    background-color: rgba(130, 4, 4, 0.788);
+    animation: col2 2.5s ease infinite alternate-reverse;
+    border: 3px solid red;
+}
+.col3{
+    background-color: rgba(63, 171, 5, 0.668);
+    animation: col3 2.5s ease infinite alternate-reverse;
+    border: 3px solid green;
+}
+
+@keyframes col1 {
+    from{
+        transform: scale(1,0.2);
+    }
+    to{
+        transform: scale(1,1);
+    }
+    
+}
+
+@keyframes col2 {
+    from{
+        transform: scale(0.2,1);
+    }
+    to{
+        transform: scale(1,1);
+    }
+    
+}
+
+@keyframes col3 {
+    from{
+        transform: rotate(180deg);
+    }
+    to{
+        transform: rotate(90deg);
+    }
+    
+}
+a{
+    text-align: center;
+    font-size: 50px;
+}
+
+
+
+/* index2 Style  */
+.main-contanier{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.child{
+    background-color: green;
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+    transition: 3s ease;
+
+}
+.child:hover{
+    width: 600px;
+    height: 200px;
+}
+.max-width{
+    transition: 3s ease;
+}
+.max-width:hover{
+    width: 400px;
+    height: 500px;
+}
+
+.blue{
+    color: blue;
+}
+/* index3 Style  */
+
