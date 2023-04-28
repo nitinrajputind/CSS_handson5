@@ -142,6 +142,7 @@ a{
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 50px;
+    /* justify-content: baseline; */
 }
 .child{
     background-color: green;
@@ -166,5 +167,128 @@ a{
 .blue{
     color: blue;
 }
+
 /* index3 Style  */
 
+.body{
+    border: 10px solid;
+    border-color: white green white red;
+}
+.sky{
+    background-image: url(./img/sky.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+.headertext{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    font-size: 50px;
+}
+.HAPPY{
+    background-color: orange;
+}
+.INDEPENDENCE{
+    background-color: #ffff;
+}
+.DAY{
+    background-color: green;
+}
+.road{
+    background-image: url(./img/road.jpg);
+    position: absolute;
+    z-index: 2;
+    width: 500000000%;
+    height: 300px;
+    bottom: 0px;
+    animation: highway 5s infinite linear;
+}
+.city{
+    background-image: url(./img/city.png);
+    background-position: center;
+    position: absolute;
+    z-index: 2;
+    width: 10000000%;
+    height: 200px;
+    bottom: 300px;
+    animation: city 4s infinite linear;
+}
+@keyframes city {
+    100%{
+        transform: translateX(-1000px);
+    }
+    
+}
+@keyframes highway {
+    100%{
+        transform: translateX(-4000px);
+    }
+}
+
+.car{
+    background-image: url(./img/car.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 3;
+    width: 500px;
+    height: 200px;
+    bottom: 200px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.Left_Wheel{
+    width: 95px;
+    position: absolute;
+    z-index: 3;
+    bottom: 198px;
+    left: 502px;
+    animation: rotate 0.2s linear infinite;
+}
+.right_Wheel{
+    width: 95px;
+    position: absolute;
+    z-index: 3;
+    bottom: 198px;
+    right: 517px;
+    animation: rotate 0.2s linear infinite;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+    
+}
+.sun{
+    background-image: url(./img/sunc.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: 2;
+    width: 200px;
+    height: 200px;
+    top: 50px;
+    right: 160px;
+}
+.flag{
+    background-image: url(./img/Tiranga1.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 2;
+    right: 500px;
+    bottom: 315px;
+}
