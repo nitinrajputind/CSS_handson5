@@ -238,16 +238,26 @@ a{
     width: 500px;
     height: 200px;
     bottom: 200px;
-    left: 50%;
-    transform: translate(-50%);
+    left: 453px;
+    /* transform: translate(-50%); */
+    animation: car 0.5s ease infinite alternate;
+}
+@keyframes car {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-4px);   
+    }
+    
 }
 
 .Left_Wheel{
     width: 95px;
     position: absolute;
     z-index: 3;
-    bottom: 198px;
-    left: 502px;
+    bottom: 197px;
+    left: 494px;
     animation: rotate 0.2s linear infinite;
 }
 .right_Wheel{
@@ -255,7 +265,7 @@ a{
     position: absolute;
     z-index: 3;
     bottom: 198px;
-    right: 517px;
+    right: 511px;
     animation: rotate 0.2s linear infinite;
 }
 
